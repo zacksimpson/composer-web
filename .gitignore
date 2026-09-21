@@ -1,0 +1,22 @@
+# Logs
+logs
+*.log
+npm-debug.log*
+
+node_modules
+dist
+dist-ssr
+*.local
+
+# Firebase config, each deployment supplies its own project, never commit real values
+.env
+!.env.example
+
+# Firebase CLI deploy cache
+.firebase
+
+# Editor directories and files
+.vscode/*
+!.vscode/extensions.json
+.idea
+.DS_Store

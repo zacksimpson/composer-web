@@ -1,0 +1,102 @@
+/* the live markdown editor, monochrome like everything else */
+
+.composer-editor .ProseMirror {
+  outline: none;
+  /* tall enough that blank space below the text still focuses it */
+  min-height: calc(100vh - 260px);
+  caret-color: #fff;
+  word-wrap: break-word;
+}
+
+.composer-editor ::spelling-error {
+  text-decoration-line: underline;
+  text-decoration-style: solid;
+  text-decoration-color: currentColor;
+}
+
+.composer-editor .ProseMirror p {
+  font-size: 20px;
+  line-height: 25px;
+  margin: 0 0 4px;
+}
+.composer-editor .ProseMirror h1 {
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 36px;
+  margin: 12px 0 6px;
+}
+.composer-editor .ProseMirror h2 {
+  font-size: 26px;
+  font-weight: 700;
+  line-height: 30px;
+  margin: 10px 0 6px;
+}
+.composer-editor .ProseMirror h3 {
+  font-size: 22px;
+  font-weight: 700;
+  line-height: 26px;
+  margin: 8px 0 4px;
+}
+.composer-editor .ProseMirror h4,
+.composer-editor .ProseMirror h5,
+.composer-editor .ProseMirror h6 {
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 25px;
+  margin: 0 0 4px;
+}
+.composer-editor .ProseMirror > :first-child {
+  margin-top: 0;
+}
+.composer-editor .ProseMirror ul,
+.composer-editor .ProseMirror ol {
+  padding-left: 24px;
+  margin: 0 0 4px;
+}
+.composer-editor .ProseMirror li {
+  font-size: 20px;
+  line-height: 25px;
+}
+.composer-editor .ProseMirror li p {
+  margin: 0;
+}
+.composer-editor .ProseMirror strong {
+  font-weight: 700;
+}
+.composer-editor .ProseMirror em {
+  font-style: italic;
+}
+.composer-editor .ProseMirror a {
+  color: inherit;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+.composer-editor .ProseMirror code {
+  font-family: ui-monospace, Menlo, Consolas, monospace;
+  font-size: 17px;
+  border: 1px solid #fff;
+  padding: 0 5px;
+}
+.composer-editor .ProseMirror pre {
+  border: 1px solid #fff;
+  padding: 10px 14px;
+  margin: 0 0 4px;
+  overflow-x: auto;
+}
+.composer-editor .ProseMirror pre code {
+  border: none;
+  padding: 0;
+}
+.composer-editor .ProseMirror blockquote {
+  border-left: 2px solid #fff;
+  padding-left: 14px;
+  margin: 0 0 4px;
+}
+.composer-editor .ProseMirror hr {
+  border: none;
+  border-top: 1px solid #fff;
+  margin: 14px 0;
+}
+.composer-editor .ProseMirror img {
+  max-width: 100%;
+}

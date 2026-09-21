@@ -1,0 +1,72 @@
+:root {
+  color-scheme: dark;
+  --bg: #000;
+  --fg: #fff;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body,
+#root {
+  height: 100%;
+  margin: 0;
+}
+
+body {
+  background: var(--bg);
+  color: var(--fg);
+  font-family: "Public Sans", -apple-system, system-ui, Arial, sans-serif;
+  font-weight: 400;
+}
+
+button,
+input,
+textarea {
+  font-family: inherit;
+  color: inherit;
+}
+
+/* no native focus rectangles, fields just get an underline */
+button {
+  background: none;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+  outline: none;
+}
+
+input,
+textarea {
+  background: none;
+  border: none;
+  outline: none;
+}
+
+/* browsers dim placeholders, this app has no gray */
+input::placeholder,
+textarea::placeholder {
+  color: var(--fg);
+  opacity: 1;
+}
+
+/* selection is the app's own inverse */
+::selection {
+  background: var(--fg);
+  color: var(--bg);
+}
+::-moz-selection {
+  background: var(--fg);
+  color: var(--bg);
+}
+
+/* native scrollbar hidden, ScrollPane draws its own */
+.scroll-hide {
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+.scroll-hide::-webkit-scrollbar {
+  display: none;
+}
